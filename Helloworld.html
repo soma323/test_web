@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Button</title>
+    <title>Create Hello World</title>
 </head>
 <body>
 
     <!-- ボタン -->
-    <button onclick="displayMessage()">Click me</button>
-
-    <!-- メッセージ表示エリア -->
-    <p id="message"></p>
+    <button onclick="createHelloWorld()">Click me</button>
 
     <!-- JavaScript -->
     <script>
-        function displayMessage() {
-            document.getElementById("message").textContent = "Hello, World!";
+        function createHelloWorld() {
+            // 新しい p タグを作成
+            const p = document.createElement("p");
+            // p タグのテキストを設定
+            p.textContent = "Hello, World!";
+            // body に p タグを追加
+            document.body.appendChild(p);
         }
     </script>
 
