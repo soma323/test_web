@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Button</title>
+</head>
+<body>
+
+    <!-- ボタン -->
+    <button onclick="displayMessage()">Click me</button>
+
+    <!-- メッセージ表示エリア -->
+    <p id="message"></p>
+
+    <!-- JavaScript -->
+    <script>
+        function displayMessage() {
+            document.getElementById("message").textContent = "Hello, World!";
+        }
+    </script>
+
+</body>
+</html>
